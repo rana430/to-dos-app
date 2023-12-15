@@ -1,0 +1,20 @@
+<table class="w-full border-4">
+  <thead>
+    <tr>
+      <th class="p-3 text-center bg-gray-200">Task Id</th>
+      <th class="p-3 text-center bg-gray-200">Title</th>
+      <th class="p-3 text-center bg-gray-200">User Id</th>
+      <th class="p-3 text-center bg-gray-200">completed</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(post of data;track post.id){
+    <tr class="border-2">
+      <td class="p-3">{{post.id}}</td>
+      <td class="p-3">{{post.title}}</td>
+      <td class="p-3">{{post.userId}}</td>
+      <td class="p-3">{{post.completed}}</td>
+    </tr>
+    }
+  </tbody>
+</table>
